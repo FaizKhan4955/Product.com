@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="container   p-2 text-white bg-opacity-75">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: aliceblue;font-weight: bold;font-size:xx-large;text-shadow: 1px 1px orangered;">Products.com <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: rgb(200, 200, 200);">Home</a>
+              <a class="nav-link" href="#" style="color: rgb(200, 200, 200);">Features</a>
+              <a class="nav-link" href="#" style="color: rgb(200, 200, 200);">Pricing</a>
+              <a class="nav-link disabled" style="color: rgb(200, 200, 200);">Disabled</a>
+            </div>
+        </div>
+        <div id="serch" >
+            <input type="search" class="se" id="inp">
+            <button class="be" id="bnp">search</button>
+            </div>
+    </div>
+</nav>
+<br>
+
+<!-- background-image: linear-gradient(to right, #1d1d1d, #454545, #717171, #a1a1a1, #d3d3d3); -->
+
+<div>
+<button id="bot" class="CategoryCard btn btn-secondary " onclick="smarty()" >smartphones</button>
+<button id="lap" class="CategoryCard btn btn-secondary" onclick="lap()">laptops</button>
+<button id="frag" class="CategoryCard btn btn-secondary" onclick="frag()">fragrances</button>
+<button id="skin" class="CategoryCard btn btn-secondary" onclick="skin()">skincare</button>
+<button id="groc" class="CategoryCard btn btn-secondary" onclick="groc()">groceries</button>
+<button id="home" class="CategoryCard btn btn-secondary" onclick="home()">home-decoration</button>
+
+</div>
+<br>
+
+<!-- <h1>Array Methods</h1> -->
+
+<div id = 'tags' style="display: flex; flex-wrap: wrap;">
+</div>
+<div id="container" style="display: flex ;flex-wrap: wrap;justify-content: space-around;">
+    
+</div>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

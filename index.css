@@ -1,0 +1,38 @@
+.card {
+    max-height: 285px;
+    width: 225px;
+    border-radius: 5px;
+    border: 2px solid rgb(130, 128, 126);
+    box-shadow:1px 2px 1px rgb(207, 207, 207) ;
+    margin: 8px;
+    padding: 5px;
+    color: black;
+}
+
+img {
+    min-height: 150px;
+    height: 60%;
+    width: 100%;
+}
+
+
+.CategoryCard{
+    border-radius: 9px;
+    /* background-image: linear-gradient(to right bottom, #f37b0e, #f57615, #f8711b, #fa6c21, #fc6726); */
+}
+.se{
+    width: 250px;
+    border-radius: 10px;
+border-color: rgb(255, 117, 18);
+
+}
+.be{
+    border-radius: 10px ;
+/* border-color: whitesmoke; */
+color: white;
+background-image: linear-gradient(to right bottom, #f37b0e, #f57615, #f8711b, #fa6c21, #fc6726);
+
+}
+body{
+    background-image: linear-gradient(to right bottom, #1d1d1d, #444345, #716c6f, #a3999b, #d7c8c8);
+}
