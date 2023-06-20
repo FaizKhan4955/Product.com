@@ -45,8 +45,7 @@ console.log(categories);    }
             <h4>${data.title} </h4>
             <h4>${data.price} </h4>
             </div>`
-            bot.style.backgroundColor='rgb(255, 117, 18)'
-            bot.style.color='white'
+         
 
             // document.getElementsByClassName('CategoryCard')
             container.innerHTML += card
@@ -62,8 +61,7 @@ console.log(categories);    }
         <h4>${data.title} </h4>
         <h4>${data.price} </h4>
         </div>`
-        lapo.style.backgroundColor='rgb(255, 117, 18)'
-        lapo.style.color='white'
+    
         container.innerHTML += card
     })
     
@@ -78,8 +76,7 @@ function frag(){
         <h4>${data.title} </h4>
         <h4>${data.price} </h4>
         </div>`
-        fragi.style.backgroundColor='rgb(255, 117, 18)'
-        fragi.style.color='white'
+       
         container.innerHTML += card
     })
 }
@@ -93,8 +90,7 @@ function skin(){
         <h4>${data.title} </h4>
         <h4>${data.price} </h4>
         </div>`
-        skini.style.backgroundColor='rgb(255, 117, 18)'
-        skini.style.color='white'
+       
         container.innerHTML += card
     })
 }
@@ -108,8 +104,6 @@ function groc(){
         <h4>${data.title} </h4>
         <h4>${data.price} </h4>
         </div>`
-        groci.style.backgroundColor='rgb(255, 117, 18)'
-        groci.style.color='white'
         container.innerHTML += card
     })
 }
@@ -123,8 +117,6 @@ function home(){
         <h4>${data.title} </h4>
         <h4>${data.price} </h4>
         </div>`
-        homi.style.backgroundColor='rgb(255, 117, 18)'
-        homi.style.color='white'
         container.innerHTML += card
     })
 }
@@ -141,106 +133,125 @@ var homi=document.getElementById('home')
 var inp=document.getElementById('inp')
 var bnp=document.getElementById('bnp')
 
-bnp.addEventListener('click',srch)
+bnp.addEventListener('click',saer)
 
-function srch(){
-    if(inp.value =='smartphones'){
-        const smartphones = product.filter((data) => data.category == 'smartphones')
-        container.innerHTML =''
-        smartphones.forEach((data, i) => {
-            const card = `<div class='card' >
-            <img src =${data.thumbnail} />
-            <br>
-            <h5>${data.title} </h5>
-            <br>
+// function srch(){
+//     if(inp.value =='smartphones'){
+//         const smartphones = product.filter((data) => data.category == 'smartphones')
+//         container.innerHTML =''
+//         smartphones.forEach((data, i) => {
+//             const card = `<div class='card' >
+//             <img src =${data.thumbnail} />
+//             <br>
+//             <h5>${data.title} </h5>
+//             <br>
     
-            <h6 style="color: red;">${data.price} ${'$'}</h6>
-            </div>`
-            // document.getElementsByClassName('CategoryCard')
-            container.innerHTML += card
-    })
-}else if (inp.value =='laptop'){
-    const laptop = product.filter((data) => data.category == 'laptops')
-    container.innerHTML =''
-    laptop.forEach((data, i) => {
-        const card = `<div class='card' >
-        <img src =${data.thumbnail} />
-        <br>
-        <h5>${data.title} </h5>
-        <br>
+//             <h6 style="color: red;">${data.price} ${'$'}</h6>
+//             </div>`
+//             // document.getElementsByClassName('CategoryCard')
+//             container.innerHTML += card
+//     })
+// }else if (inp.value =='laptop'){
+//     const laptop = product.filter((data) => data.category == 'laptops')
+//     container.innerHTML =''
+//     laptop.forEach((data, i) => {
+//         const card = `<div class='card' >
+//         <img src =${data.thumbnail} />
+//         <br>
+//         <h5>${data.title} </h5>
+//         <br>
 
-        <h6 style="color: red;">${data.price} ${'$'}</h6>
-        </div>`
+//         <h6 style="color: red;">${data.price} ${'$'}</h6>
+//         </div>`
       
-        container.innerHTML += card
-    })
-}else if (inp.value =='fragrance'){
-    const fragrance=product.filter((data)=>data.category=='fragrances')
-    container.innerHTML =''
-    fragrance.forEach((data, i) => {
-        const card = `<div class='card' >
-        <img src =${data.thumbnail} />
-        <br>
-        <h5>${data.title} </h5>
-        <br>
+//         container.innerHTML += card
+//     })
+// }else if (inp.value =='fragrance'){
+//     const fragrance=product.filter((data)=>data.category=='fragrances')
+//     container.innerHTML =''
+//     fragrance.forEach((data, i) => {
+//         const card = `<div class='card' >
+//         <img src =${data.thumbnail} />
+//         <br>
+//         <h5>${data.title} </h5>
+//         <br>
 
-        <h6 style="color: red;">${data.price} ${'$'}</h6>
-        </div>`
+//         <h6 style="color: red;">${data.price} ${'$'}</h6>
+//         </div>`
       
-        container.innerHTML += card
-    })
-}else if (inp.value =='skincare'){
-    const skincare=product.filter((data)=>data.category=='skincare')
-    container.innerHTML =''
-    skincare.forEach((data, i) => {
-        const card = `<div class='card' >
-        <img src =${data.thumbnail} />
-        <br>
-        <h5>${data.title} </h5>
-        <br>
+//         container.innerHTML += card
+//     })
+// }else if (inp.value =='skincare'){
+//     const skincare=product.filter((data)=>data.category=='skincare')
+//     container.innerHTML =''
+//     skincare.forEach((data, i) => {
+//         const card = `<div class='card' >
+//         <img src =${data.thumbnail} />
+//         <br>
+//         <h5>${data.title} </h5>
+//         <br>
 
-        <h6 style="color: red;">${data.price} ${'$'}</h6>
-        </div>`
+//         <h6 style="color: red;">${data.price} ${'$'}</h6>
+//         </div>`
        
-        container.innerHTML += card
-    })
-}else if (inp.value =='groceries'){
-    const groceries=product.filter((data)=>data.category=='groceries')
-    container.innerHTML =''
-    groceries.forEach((data, i) => {
-        const card = `<div class='card' >
-        <img src =${data.thumbnail} />
-        <img src =${data.thumbnail} />
-        <br>
-        <h5>${data.title} </h5>
-        <br>
+//         container.innerHTML += card
+//     })
+// }else if (inp.value =='groceries'){
+//     const groceries=product.filter((data)=>data.category=='groceries')
+//     container.innerHTML =''
+//     groceries.forEach((data, i) => {
+//         const card = `<div class='card' >
+//         <img src =${data.thumbnail} />
+//         <img src =${data.thumbnail} />
+//         <br>
+//         <h5>${data.title} </h5>
+//         <br>
 
-        <h6 style="color: red;">${data.price} ${'$'}</h6>
-        </div>`
+//         <h6 style="color: red;">${data.price} ${'$'}</h6>
+//         </div>`
      
-        container.innerHTML += card
-    })
-}else if (inp.value =='home-decoration' ||inp.value =='home' ){
-    const homedecoration=product.filter((data)=>data.category=='home-decoration')
-    container.innerHTML =''
-    homedecoration.forEach((data, i) => {
-        const card = `<div class='card' >
-        <img src =${data.thumbnail} />
-        <br>
-        <h5>${data.title} </h5>
-        <br>
+//         container.innerHTML += card
+//     })
+// }else if (inp.value =='home-decoration' ||inp.value =='home' ){
+//     const homedecoration=product.filter((data)=>data.category=='home-decoration')
+//     container.innerHTML =''
+//     homedecoration.forEach((data, i) => {
+//         const card = `<div class='card' >
+//         <img src =${data.thumbnail} />
+//         <br>
+//         <h5>${data.title} </h5>
+//         <br>
 
-        <h6 style="color: red;">${data.price} ${'$'}</h6>
-        </div>`
+//         <h6 style="color: red;">${data.price} ${'$'}</h6>
+//         </div>`
        
-        container.innerHTML += card
-    })
-}
+//         container.innerHTML += card
+//     })
+// }
 
-}
+// }
 
+async function saer(){
+   const drive=await fetch(`https://dummyjson.com/products/search?q=${inp.value}`)
+   .then(res => res.json())
+//    .then(console.log);
 
+   let be =await drive.products
+   container.innerHTML=''
+   be.forEach((data, i) => {
+                const card = `<div class='card' >
+                <img src =${data.thumbnail} />
+                <br>
+                <h5>${data.title} </h5>
+                <br>
+        
+                <h6 style="color: red;">${data.price} ${'$'}</h6>
+                </div>`
+                // document.getElementsByClassName('CategoryCard')
+                container.innerHTML += card
 
+})}
+saer()
 
     //if we do it thruofh for loop
 
